@@ -1,0 +1,14 @@
+html {
+  background: url(./assets/polygon-backgrounds-2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#navbar{
+  /*position: relative;*/
+  /*float:left;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+}
