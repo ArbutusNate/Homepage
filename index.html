@@ -46,7 +46,7 @@
     </div>
   <!-- Navbar -->
 
-    <section class="container" id="intro" data-aos="slide-left">
+    <section class="container" id="intro" data-aos="fade-down">
 
         <div class="col-sm-4">
           <h1> Hi, I'm Nate </h1>
@@ -58,13 +58,26 @@
 
     </section>
 
-    <section class="container" id="work">
+    <section class="container-fluid" id="work" data-aos="fade-left">
       <div class="row">
-
+        <div class="col work-link">
+          <a href="...">
+            <img src="./assets/brian-home-edit.png" 
+              alt="briancrawford.info - a page for a local author."
+              class="img-thumbnail"/>
+          </a>
+        </div>
+        <div class="col work-link">
+          <a href="...">
+            <img src="./assets/bg-home-edit.png" 
+              alt="GameVault - a website for tabletop gamers."
+              class-"img-thumbnail">
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="container" id="about" data-aos="slide-right">
+    <section class="container" id="about" data-aos="fade-right">
 
         <div class="col-sm-4">
           <h3> What I Do </h3>
@@ -114,7 +127,7 @@
       </div>
     </section>
 
-    <section class="container" id="hire" data-aos="slide-up">
+    <section class="container" id="hire" data-aos="fade-left">
       <div class="row">
 
         <div class="col-sm-4">
@@ -149,7 +162,13 @@
     <!-- AOS -->
     <script src="./aos/aos.js"></script>
     <script>
-      AOS.init();
+      $(function() {
+        AOS.init();
+      });
+
+      $(window).on('load', function() {
+        AOS.refresh();
+      });
     </script>
     <!-- Custom JS -->
     <!-- <script async src="./app.js"></script> -->

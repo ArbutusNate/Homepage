@@ -15,16 +15,8 @@ h3 {
 }
 
 #navbar{
-  /*position: relative;*/
-  /*float:left;*/
-  /*top: 0px;*/
-  /*left: 0px;*/
   display: none;
 }
-
-/*.container {
-
-}*/
 
 section {
   display: inline-block;
@@ -37,9 +29,19 @@ section {
 }
 
 #hire {
-  margin-bottom: 0px;
+  margin-bottom: 150px;
 }
 
 #intro {
   margin-top: 50px;
 }
+
+.work-link{
+  margin: 0px;
+  padding: 0px;
+}
+  .work-link img {
+    /*height: 200px;*/
+    border: 1px solid black;
+  }
+
