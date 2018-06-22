@@ -4,6 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
+  overflow-x: hidden;
 }
 
 h1 {
@@ -85,9 +86,11 @@ a, a:hover, a:visited, a:link, a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #0b2233;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+/*  -webkit-transform: skewY(20deg);
+  transform: skewY(20deg);*/
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
   -webkit-transition-property: transform;
@@ -103,4 +106,6 @@ a, a:hover, a:visited, a:link, a:active {
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+/*  -webkit-transform: skewY(20deg);
+  transform: skewY(20deg);*/
 }
