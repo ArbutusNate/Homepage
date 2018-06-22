@@ -25,7 +25,7 @@ section {
   margin-right: auto;
   max-width: 1000px;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 #hire {
@@ -33,7 +33,9 @@ section {
 }
 
 #intro {
-  margin-top: 50px;
+  margin-top: 200px;
+  margin-bottom: 125px;
+  /*max-width: 1000px;*/
 }
 
 .work-link{
@@ -41,7 +43,12 @@ section {
   padding: 0px;
 }
   .work-link img {
-    /*height: 200px;*/
+    /*max-height: 200px;*/
+    padding: 0px;
     border: 1px solid black;
   }
 
+#down-arrow {
+  max-width: 120px;
+  margin: auto 0;
+}
