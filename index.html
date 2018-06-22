@@ -11,11 +11,14 @@
   <!-- Import Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
   <!-- Stylesheet -->
-    <link rel="stylesheet" href="./style.css">
-  <!-- WOW Stylesheet -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!-- AOS Stylesheet -->
+    <link rel="stylesheet" href="./aos/aos.css" />
   </head>
   <body>
   <!-- Navbar -->
@@ -43,7 +46,7 @@
     </div>
   <!-- Navbar -->
 
-    <section class="container" id="intro">
+    <section class="container" id="intro" data-aos="slide-left">
 
         <div class="col-sm-4">
           <h1> Hi, I'm Nate </h1>
@@ -61,7 +64,7 @@
       </div>
     </section>
 
-    <section class="container" id="about">
+    <section class="container" id="about" data-aos="slide-right">
 
         <div class="col-sm-4">
           <h3> What I Do </h3>
@@ -111,7 +114,7 @@
       </div>
     </section>
 
-    <section class="container" id="hire">
+    <section class="container" id="hire" data-aos="slide-up">
       <div class="row">
 
         <div class="col-sm-4">
@@ -138,11 +141,17 @@
       crossorigin="anonymous">
     </script>
     <!-- Bootstrap CDN -->
-    <script
+    <script async
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous">
     </script>
+    <!-- AOS -->
+    <script src="./aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Custom JS -->
-    <script src="./app.js"></script>
+    <!-- <script async src="./app.js"></script> -->
+
   </body>
