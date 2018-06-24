@@ -52,13 +52,13 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .work-link{
-  margin: 2px;
+  /*margin: 2px;*/
   /*padding: 0px;*/
 }
   .work-link img {
-    max-width: 150px;
+    width: 100%;
     margin: auto;
-    display: inline-block;
+    display: inline;
     padding: 0px;
     border: 1px solid black;
   }
@@ -76,6 +76,18 @@ a, a:hover, a:visited, a:link, a:active {
   #intro {
     margin-top: 200px;
     margin-bottom: 150px;
+  }
+
+  .work-link img {
+    width: 100%;
+    /*margin: auto;*/
+    /*display: inline-block;*/
+    /*padding: 0px;*/
+    /*border: 1px solid black;*/
+  }
+
+  #work {
+    height: 20%;
   }
 }
 
