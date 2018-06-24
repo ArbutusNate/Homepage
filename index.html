@@ -16,7 +16,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous">
   <!-- AOS Stylesheet -->
-    <link rel="stylesheet" href="./aos/aos.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="./aos/aos.css"/>
   <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css"/>
 
@@ -53,23 +53,23 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-4 work-link">
+        <div class="col-xs-4 work-link">
           <a href="https://briancrawford.info">
             <img src="./assets/brian-home-edit.png"
               alt="briancrawford.info - a page for a local author."
               class="img-thumbnail"/>
           </a>
         </div>
-        <div class="col-sm-4 work-link">
+        <div class="col-xs-4 work-link">
           <a href="https://game-vault.herokuapp.com/">
             <img src="./assets/bg-home-edit.png"
               alt="GameVault - a website for tabletop gamers."
               class="img-thumbnail">
           </a>
         </div>
-        <div class="col-sm-4 work-link">
+        <div class="col-xs-4 work-link">
           <a href="https://arthub-project.herokuapp.com/">
-            <img src="./assets/arthub-home.PNG"
+            <img src="./assets/arthub-home.png"
               alt="GameVault - a website for tabletop gamers."
               class="img-thumbnail">
           </a>
@@ -160,7 +160,11 @@
 
   <!-- JS Scripts -->
     <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
     <!-- Popper for Botstrap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -176,13 +180,15 @@
     <!-- AOS -->
     <script src="./aos/aos.js"></script>
     <script>
-      $(function() {
-        AOS.init();
-      });
 
-      $(window).on('load', function() {
-        AOS.refresh();
-      });
+      if ($(window).width() < 800) {
+        return
+      } else {
+        AOS.init();
+      }
+
+      AOS.refresh();
+
     </script>
     <!-- Custom JS -->
     <script async src="./app.js"></script>

@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 h1 {
@@ -16,13 +16,13 @@ h3 {
 }
 
 section {
-  display: inline-block;
+  /*display: inline-block;*/
   display: block;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 button {
@@ -43,9 +43,8 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 #intro {
-  margin-top: 200px;
-  margin-bottom: 125px;
-  /*max-width: 1000px;*/
+    margin-top: 150px;
+    /*margin-bottom: inherit;*/
 }
 
 .work-link{
@@ -53,8 +52,9 @@ a, a:hover, a:visited, a:link, a:active {
   padding: 0px;
 }
   .work-link img {
-    /*max-height: 200px;*/
-    padding: 0px;
+    max-height: 200px;
+    /*padding: 10px;*/
+    margin: 3px;
     border: 1px solid black;
   }
 
@@ -109,3 +109,5 @@ a, a:hover, a:visited, a:link, a:active {
 /*  -webkit-transform: skewY(20deg);
   transform: skewY(20deg);*/
 }
+
+
