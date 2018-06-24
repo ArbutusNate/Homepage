@@ -7,3 +7,13 @@ $(window).ready(function(){
     }, 1500)
   })
 })
+
+$(window).ready(function(){
+    if ($(window).width() < 800) {
+      console.log('small');
+      return;
+    } else {
+      console.log('big');
+      AOS.init();
+    }
+})

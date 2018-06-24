@@ -46,21 +46,37 @@ a, a:hover, a:visited, a:link, a:active {
     margin-top: 150px;
     /*margin-bottom: inherit;*/
 }
+#work {
+  /*margin: 20px;*/
+  /*margin: auto;*/
+}
 
 .work-link{
-  margin: 0px;
-  padding: 0px;
+  margin: 2px;
+  /*padding: 0px;*/
 }
   .work-link img {
-    max-height: 200px;
-    /*padding: 10px;*/
-    margin: 3px;
+    max-width: 150px;
+    margin: auto;
+    display: inline-block;
+    padding: 0px;
     border: 1px solid black;
   }
 
 #down-arrow {
-  max-width: 120px;
-  margin: auto 0;
+  max-width: 20%;
+  /*margin: auto auto;*/
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    margin-bottom: 200px;
+  }
+
+  #intro {
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
 }
 
 /*Button Animations*/
