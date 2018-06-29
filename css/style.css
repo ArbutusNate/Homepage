@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 h1 {
   margin-bottom: 40px;
   font-size: 55px;
@@ -8,8 +12,9 @@ h3 {
   font-size: 40px;
 }
 
-h1, h3 {
+h1, h3, button {
   font-family: 'Cabin Sketch', cursive;
+  color: #0b2233;;
 }
 
 section {
@@ -17,7 +22,8 @@ section {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 
@@ -25,13 +31,32 @@ button {
   border: 1px solid black;
   background: none;
   color: black;
-  font-family: 'Cabin Sketch', cursive;
   font-size: 30px;
 }
 
 a, a:hover, a:visited, a:link, a:active {
   color: black;
   text-decoration: none;
+}
+
+li {
+  font-size: 15px;
+}
+
+#top-right-ribbon {
+  position: absolute;
+  top: 30px;
+  right: -55px;
+  width: 200px;
+  text-align: center;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background: #0b2233;
+  /*border: 2px dotted #0b2233;;*/
+}
+
+#top-right-ribbon a {
+  color: white;
 }
 
 #hire {
@@ -44,7 +69,7 @@ a, a:hover, a:visited, a:link, a:active {
 
 .work-link img {
   width: 100%;
-  margin: auto;
+  margin: 10px auto;
   display: inline;
   padding: 0px;
   border: 1px solid black;
@@ -56,20 +81,26 @@ a, a:hover, a:visited, a:link, a:active {
 
 @media screen and (min-width: 900px) {
   section {
-    margin-bottom: 200px;
+    /*margin-bottom: 200px;*/
+    margin: 100px 0px;
   }
 
   button {
-    margin-top: 35px;
+    margin: 35px 0px;
+  }
+
+  li {
+    font-size: initial;
   }
 
   #intro {
-    margin-top: 135px;
+    /*margin-top: 135px;*/
     margin-bottom: 70px;
   }
 
   .work-link img {
     width: 100%;
+    margin: auto;
   }
 
   #work {
@@ -132,5 +163,3 @@ a, a:hover, a:visited, a:link, a:active {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
