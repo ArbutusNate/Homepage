@@ -44,51 +44,18 @@ li {
 }
 
 #ribbon-interior {
-  background: #0b2233;
-  position: relative;
-  top: 185px;
-  right: 39px;
-  text-align: center;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  visibility: hidden;
 }
 
 #top-right-ribbon {
+  height: 20px;
+}
+
+.gh-mark {
   position: absolute;
-  z-index: 100;
-  top: -150px;
-  right: -150px;
-  width: 300px;
-  height: 300px;
-  transition: transform-origin .3s ease-in;
-}
-
-/*.mask {
-  content: URL("../assets/GitHub-Mark-32px.png");
-  height: 400px;
-  height: 60px;
-  float: left;
-  background: #fff;
-}*/
-
-#top-right-ribbon:hover {
-  transform-origin: 70px -23px;
-  transition-duration: 1.0s;
-
-/*  transition: translate(15px, 15px);
-  -webkit-transition: translate(15px, 15px);*/
-  /*-webkit-transform-origin: 0 50%;*/
-  /*transform-origin: 0 50%;*/
-/*  -webkit-transition-property: translate;
-  transition-property: translate;*/
-/*  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;*/
-}
-
-#top-right-ribbon a {
-  color: white;
+  top: 10px;
+  right: 10px;
+  height: 40px;
 }
 
 #hire {
@@ -96,7 +63,7 @@ li {
 }
 
 #intro {
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 .work-link img {
@@ -150,6 +117,38 @@ li {
   #down-arrow {
     /*width: 100px;*/
     height: 50px;
+  }
+
+  #ribbon-interior {
+    visibility: visible;
+    background: #0b2233;
+    position: relative;
+    top: 185px;
+    right: 39px;
+    text-align: center;
+    margin-top: 0px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  #top-right-ribbon {
+    position: absolute;
+    z-index: 100;
+    top: -210px;
+    right: -145px;
+    width: 300px;
+    height: 400px;
+  }
+  .gh-mark {
+    position: relative;
+    top: 185px;
+    right: -125px;
+    height: 64px;
+    visibility: hidden;
+  }
+
+  #top-right-ribbon a {
+    color: white;
   }
 }
 
