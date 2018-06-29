@@ -17,6 +17,11 @@ h1, h3, button {
   color: #174363;;
 }
 
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
 section {
   display: block;
   max-width: 1000px;
