@@ -85,7 +85,6 @@ li {
 
 @media screen and (min-width: 900px) {
   section {
-    /*margin-bottom: 200px;*/
     margin: 100px 0px;
   }
 
@@ -98,7 +97,6 @@ li {
   }
 
   #intro {
-    /*margin-top: 135px;*/
     margin-bottom: 70px;
   }
 
@@ -120,8 +118,16 @@ li {
   }
 
   #down-arrow {
-    /*width: 100px;*/
-    height: 50px;
+    height: 60px;
+  }
+
+  #top-right-ribbon {
+    position: absolute;
+    z-index: 100;
+    top: -210px;
+    right: -145px;
+    width: 300px;
+    height: 400px;
   }
 
   #ribbon-interior {
@@ -136,14 +142,6 @@ li {
     -webkit-transform: rotate(45deg);
   }
 
-  #top-right-ribbon {
-    position: absolute;
-    z-index: 100;
-    top: -210px;
-    right: -145px;
-    width: 300px;
-    height: 400px;
-  }
   .gh-mark {
     position: relative;
     top: 185px;
