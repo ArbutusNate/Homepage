@@ -11,7 +11,6 @@ let hoverOff = function () {
     right: "-=50",
     top: "-=40"
   });
-  // $(".gh-mark").fadeTo(400, 0);
   $(".gh-mark").fadeOut(400, () => {
   $(".gh-mark").css("visibility", "hidden").css("display", "")
   });

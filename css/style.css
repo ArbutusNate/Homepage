@@ -14,7 +14,7 @@ h3 {
 
 h1, h3, button {
   font-family: 'Cabin Sketch', cursive;
-  color: #0b2233;;
+  color: #174363;;
 }
 
 section {
@@ -121,7 +121,7 @@ li {
 
   #ribbon-interior {
     visibility: visible;
-    background: #0b2233;
+    background: #174363;
     position: relative;
     top: 185px;
     right: 39px;
@@ -175,7 +175,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0b2233;
+  background: #174363;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
