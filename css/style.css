@@ -43,16 +43,48 @@ li {
   font-size: 15px;
 }
 
-#top-right-ribbon {
-  position: absolute;
-  top: 30px;
-  right: -55px;
-  width: 200px;
+#ribbon-interior {
+  background: #0b2233;
+  position: relative;
+  top: 185px;
+  right: 39px;
   text-align: center;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  background: #0b2233;
-  /*border: 2px dotted #0b2233;;*/
+}
+
+#top-right-ribbon {
+  position: absolute;
+  z-index: 100;
+  top: -150px;
+  right: -150px;
+  width: 300px;
+  height: 300px;
+  transition: transform-origin .3s ease-in;
+}
+
+/*.mask {
+  content: URL("../assets/GitHub-Mark-32px.png");
+  height: 400px;
+  height: 60px;
+  float: left;
+  background: #fff;
+}*/
+
+#top-right-ribbon:hover {
+  transform-origin: 70px -23px;
+  transition-duration: 1.0s;
+
+/*  transition: translate(15px, 15px);
+  -webkit-transition: translate(15px, 15px);*/
+  /*-webkit-transform-origin: 0 50%;*/
+  /*transform-origin: 0 50%;*/
+/*  -webkit-transition-property: translate;
+  transition-property: translate;*/
+/*  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;*/
 }
 
 #top-right-ribbon a {
