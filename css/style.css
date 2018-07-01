@@ -60,13 +60,11 @@ li {
 }
 
 #img-frame {
-  /*height: 150px;*/
   width: 20%;
   height: 100px;
   overflow: hidden;
-  /*overflow-y: hidden;*/
-  border-radius: 50px;
-  margin: 0px auto;
+  border-radius: 40px;
+  border: 1px solid #174363;
 }
 
 #profile-pic {
@@ -107,6 +105,17 @@ li {
 
   li {
     font-size: initial;
+  }
+
+  #img-frame {
+    height: 100px;
+    width: 100px;
+    margin-top: 75px;
+  }
+
+  #profile-pic {
+    left: -16px;
+    height: 120px;
   }
 
   #top-right-ribbon {
