@@ -52,10 +52,6 @@ li {
   visibility: hidden;
 }
 
-/*#top-right-ribbon {
-  height: 20px;
-}*/
-
 .gh-mark {
   position: absolute;
   top: 10px;
@@ -63,12 +59,29 @@ li {
   height: 40px;
 }
 
-#hire {
-  margin-bottom: 150px;
+#img-frame {
+  /*height: 150px;*/
+  width: 20%;
+  height: 100px;
+  overflow: hidden;
+  /*overflow-y: hidden;*/
+  border-radius: 50px;
+  margin: 0px auto;
+}
+
+#profile-pic {
+  position: relative;
+  height: 170px;
+  top: 0px;
+  left: -21px;
 }
 
 #intro {
-    margin-top: 130px;
+    margin-top: 30px;
+}
+
+#down-arrow {
+  max-width: 20%;
 }
 
 .work-link img {
@@ -79,8 +92,8 @@ li {
   border: 1px solid black;
 }
 
-#down-arrow {
-  max-width: 20%;
+#hire {
+  margin-bottom: 150px;
 }
 
 @media screen and (min-width: 900px) {
@@ -94,31 +107,6 @@ li {
 
   li {
     font-size: initial;
-  }
-
-  #intro {
-    margin-bottom: 70px;
-  }
-
-  .work-link img {
-    width: 100%;
-    margin: auto;
-  }
-
-  #work {
-    height: 20%;
-  }
-
-  #footer {
-    margin-bottom: 80px;
-  }
-
-  #footer p {
-    font-size: 10px;
-  }
-
-  #down-arrow {
-    height: 60px;
   }
 
   #top-right-ribbon {
@@ -153,6 +141,32 @@ li {
   #top-right-ribbon a {
     color: white;
   }
+
+  #intro {
+    margin-bottom: 70px;
+  }
+
+  #down-arrow {
+    height: 60px;
+  }
+
+  .work-link img {
+    width: 100%;
+    margin: auto;
+  }
+
+  #work {
+    height: 20%;
+  }
+
+  #footer {
+    margin-bottom: 80px;
+  }
+
+  #footer p {
+    font-size: 10px;
+  }
+
 }
 
 /*Button Animations*/
