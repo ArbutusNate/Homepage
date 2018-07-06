@@ -8,15 +8,15 @@ let btnClick = function () {
 
 let hoverGitOn = function() {
   let _banner = $(this);
-  if(_banner.attr("status") === "hidden" && _banner.attr("action") === "stopped") {
+  if(_banner.attr("data-status") === "hidden" && _banner.attr("data-action") === "stopped") {
     _banner.attr({
-      status : "shown",
-      action : "animating"}
+      "data-status" : "shown",
+      "data-action" : "animating"}
     ).animate({
       right: "+=50",
       top: "+=40"
     }, 1000, () => {
-      _banner.attr("action", "stopped");
+      _banner.attr("data-action", "stopped");
     })
     $(".gh-mark").css("visibility", "visible").hide().fadeIn(400)
   } else {
@@ -27,15 +27,15 @@ let hoverGitOn = function() {
 
 let hoverGitOff = function () {
   let _banner = $(this);
-  if(_banner.attr("status") === "shown" && _banner.attr("action") === "stopped") {
+  if(_banner.attr("data-status") === "shown" && _banner.attr("data-action") === "stopped") {
     _banner.attr({
-      status : "hidden",
-      action: "animating"}
+      "data-status" : "hidden",
+      "data-action": "animating"}
       ).animate({
       right: "-=50",
       top: "-=40"
       }, 1000, () => {
-        _banner.attr("action", "stopped");
+        _banner.attr("data-action", "stopped");
       });
     $(".gh-mark").fadeOut(400, () => {
     $(".gh-mark").css("visibility", "hidden").css("display", "")
@@ -68,23 +68,16 @@ let hoverPicOn = function () {
     console.log('animating');
     return;
   }
-}
-
-// let hoverPicOff = function () {
-//   $(this).animate({
-//     width: "100px"
-//   })
-//   console.log("hover off");
-// }
+};
 
 $(window).ready(function(){
 
   ($(window).width() < 800) ?
   console.log('small') :
-  console.log('big');
+  console.log('big')
   AOS.init();
 
   $("button").on('click', btnClick);
   $("#top-right-ribbon").hover(hoverGitOn, hoverGitOff);
-  $(".flip").on('mouseenter', hoverPicOn);
+  // $(".flip").on('mouseenter', hoverPicOn);
 })
