@@ -8,7 +8,9 @@ let btnClick = function () {
 
 let hoverGitOn = function() {
   let _banner = $(this);
+  // Check for Animation
   if(_banner.attr("data-status") === "hidden" && _banner.attr("data-action") === "stopped") {
+    // Set attributes for animation
     _banner.attr({
       "data-status" : "shown",
       "data-action" : "animating"}
@@ -16,18 +18,20 @@ let hoverGitOn = function() {
       right: "+=50",
       top: "+=40"
     }, 1000, () => {
+      // After animation update attributes
       _banner.attr("data-action", "stopped");
     })
     $(".gh-mark").css("visibility", "visible").hide().fadeIn(400)
   } else {
-    console.log('Either shown or Animating');
     return;
   }
 };
 
 let hoverGitOff = function () {
   let _banner = $(this);
+  // Check for Animation
   if(_banner.attr("data-status") === "shown" && _banner.attr("data-action") === "stopped") {
+    // Set attributes for animation
     _banner.attr({
       "data-status" : "hidden",
       "data-action": "animating"}
@@ -35,21 +39,19 @@ let hoverGitOff = function () {
       right: "-=50",
       top: "-=40"
       }, 1000, () => {
+        // After animation update attributes
         _banner.attr("data-action", "stopped");
       });
     $(".gh-mark").fadeOut(400, () => {
     $(".gh-mark").css("visibility", "hidden").css("display", "")
     });
   } else {
-    console.log('Either hidden or Animating');
-
     return;
   }
 };
 
 let hoverPicOn = function () {
   if ($(this).attr("data-action") === "stopped") {
-    console.log('stopped');
     let oWidth = $(this).width();
     $(this).attr("data-action", "animating").animate({
       width : "0px",
@@ -65,17 +67,17 @@ let hoverPicOn = function () {
       })
     })
   } else {
-    console.log('animating');
     return;
   }
 };
 
 $(window).ready(function(){
 
-  ($(window).width() < 800) ?
-  console.log('small') :
-  console.log('big')
-  AOS.init();
+  if($(window).width() < 767) {
+    return;
+  } else {
+    AOS.init();
+  }
 
   $("button").on('click', btnClick);
   $("#top-right-ribbon").hover(hoverGitOn, hoverGitOff);
