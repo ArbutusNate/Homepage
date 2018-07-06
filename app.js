@@ -71,15 +71,16 @@ let hoverPicOn = function () {
   }
 };
 
-$(window).ready(function(){
+// let iconWiggle = function () {
+//   $(this).animate({
+//   })
+// }
 
-  // if($(window).width() < 767) {
-  //   return;
-  // } else {
-    AOS.init();
-  // }
+$(window).ready(function(){
+  AOS.init();
 
   $("button").on('click', btnClick);
   $("#top-right-ribbon").hover(hoverGitOn, hoverGitOff);
+  // $(".social-link").mouseover(iconWiggle);
   // $(".flip").on('mouseenter', hoverPicOn);
 })
