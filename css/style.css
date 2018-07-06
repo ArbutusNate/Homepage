@@ -93,16 +93,9 @@ li {
 }
 
 .social-link a img {
+  margin-top: 10px;
   width: 60%;
 }
-
-/*.social-link:hover {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-}*/
 
 @-webkit-keyframes pulse {
   25% {
@@ -201,8 +194,6 @@ li {
 
   #ribbon-interior {
     visibility: visible;
-    /*background: white;*/
-    /*border: 2px solid #174363;*/
     color: #174363;
     font-family: 'Cabin Sketch', cursive;
     position: relative;
