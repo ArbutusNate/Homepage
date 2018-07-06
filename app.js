@@ -17,6 +17,7 @@ let hoverGitOff = function () {
 }
 
 let hoverPicOn = function () {
+  console.log($(this).width());
     let oWidth = $(this).width();
     $(this).animate({
       width : "0px",
