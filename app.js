@@ -73,11 +73,11 @@ let hoverPicOn = function () {
 
 $(window).ready(function(){
 
-  if($(window).width() < 767) {
-    return;
-  } else {
+  // if($(window).width() < 767) {
+  //   return;
+  // } else {
     AOS.init();
-  }
+  // }
 
   $("button").on('click', btnClick);
   $("#top-right-ribbon").hover(hoverGitOn, hoverGitOff);
