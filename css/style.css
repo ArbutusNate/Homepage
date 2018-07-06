@@ -30,7 +30,7 @@ section {
 }
 
 button {
-  border: 1px solid black;
+  border: 1px solid #174363;
   background: none;
   color: black;
   font-size: 30px;
@@ -55,6 +55,7 @@ li {
   top: 10px;
   right: 10px;
   height: 40px;
+  /*color: black;*/
 }
 
 #img-frame {
@@ -90,6 +91,10 @@ li {
 
 #hire {
   margin-bottom: 150px;
+}
+
+.social-link a img {
+  width: 60%;
 }
 
 #footer {
