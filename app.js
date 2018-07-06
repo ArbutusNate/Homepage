@@ -40,10 +40,19 @@ let hoverPicOn = function () {
 // }
 
 $(window).ready(function(){
-  ($(window).width() < 800) ?
-  console.log('small')  :
-  console.log('big');
-  AOS.init();
+  if ($(window).width() < 800) {
+    console.log('small');
+    // $("#profile-pic").css("src", "./assets/me_pic_640.jpg");
+  } else {
+    console.log('big');
+    // $("#profile-pic").css("src", "./assets/me_pic_900.jpg");
+    AOS.init();
+  }
+  // ($(window).width() < 800) ?
+  // // console.log('small')
+  // $("#profile-pic").css("src", "./assets/me_pic_640.jpg")  :
+  // // console.log('big');
+  // $("#profile-pic").css("src", "./assets/me_pic_900.jpg")
 
   $("button").click(function(e) {
     let name = $(this).attr("data-name");
