@@ -71,16 +71,10 @@ let hoverPicOn = function () {
   }
 };
 
-// let iconWiggle = function () {
-//   $(this).animate({
-//   })
-// }
-
 $(window).ready(function(){
   AOS.init();
 
   $("button").on('click', btnClick);
   $("#top-right-ribbon").hover(hoverGitOn, hoverGitOff);
-  // $(".social-link").mouseover(iconWiggle);
   // $(".flip").on('mouseenter', hoverPicOn);
 })
